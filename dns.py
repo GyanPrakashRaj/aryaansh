@@ -127,6 +127,7 @@ def create_resolver(servers=None, resolvconf=None, hosts=None):
         if hosts is None:
             hosts = r'c:\windows\hosts'
         from twisted.internet import reactor
+        
         bootstrap = client._ThreadedResolverImpl(reactor)
         host_resolver = Resolver(hosts)
         the_resolver = root.bootstrap(bootstrap, resolverFactory=client.Resolver)

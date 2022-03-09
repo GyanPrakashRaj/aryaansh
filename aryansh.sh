@@ -58,5 +58,6 @@ if [ $# -eq 0 ] || [ $# -gt 1 ] || [ $# -lt 1 ]; then
 	PRINT_CORRECT_USAGE_EXAMPLE
 	exit 1
 else
-	MAKE_REDIRECT_PAYLOADS
+	
+    MAKE_REDIRECT_PAYLOADS
 fi
